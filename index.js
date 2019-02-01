@@ -3,6 +3,10 @@ const fs = require('fs');
 const express = require('express');
 const app = express();
 const port = `5001`;
+const cors = require('cors');
+
+// LOAD LIBRARIES
+app.use(cors());
 
 // API ENDPOINTS
 app.get('/', (req, res) => {

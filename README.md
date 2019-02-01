@@ -7,7 +7,14 @@ Simple NodeJS API that serves sample files to download and interpret.
 
 ## Local Environment Instructions
 
-Within directory:
+Within directory, install dependencies:
+
+```bash
+yarn install;
+// or npm install;
+```
+
+Start server:
 
 ```bash
 yarn start;

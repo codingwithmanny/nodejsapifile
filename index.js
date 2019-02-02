@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
         if (req.query.file && fileTypes.indexOf(req.query.file.toLowerCase()) > -1) {
             return resolve(`sample.${fileTypes[fileTypes.indexOf(req.query.file.toLowerCase())]}`);
         }
-        return reject(`Please profile a file type of ?file=${fileTypes.join('|')}`);
+        return reject(`Please provide a file type of ?file=${fileTypes.join('|')}`);
     })
     // Validate if the files exists
     .then((file) => {
